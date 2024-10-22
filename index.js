@@ -13,7 +13,7 @@ let id = 1;
 app.post("/", (req, res) => {
   const { originalUrl } = req.body;
   const shortCode = crypto.randomBytes(6).toString("hex").toUpperCase();
-  const shortUrl = `http://localhost:3000/${shortCode}`;
+  const shortUrl = `https://short-link-backend-latest.onrender.com/${shortCode}`;
   const link = {
     id: id++,
     originalUrl,
